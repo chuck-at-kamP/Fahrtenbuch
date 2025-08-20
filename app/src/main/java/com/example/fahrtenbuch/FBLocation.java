@@ -68,32 +68,6 @@ public class FBLocation {
         return result;
     }
 
-    /*
-    public double[] getCurrentLocation3() {
-        double[] result = new double[2];
-        FBLocationListener fbLocListener = new FBLocationListener(context, this);
-        locationManager = (LocationManager) context.getSystemService(Context.LOCATION_SERVICE);
-        if (ActivityCompat.checkSelfPermission(context, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED
-                && ActivityCompat.checkSelfPermission(context, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
-            // TODO: Consider calling
-            //    ActivityCompat#requestPermissions
-            // here to request the missing permissions, and then overriding
-            //   public void onRequestPermissionsResult(int requestCode, String[] permissions,
-            //                                          int[] grantResults)
-            // to handle the case where the user grants the permission. See the documentation
-            // for ActivityCompat#requestPermissions for more details.
-            ActivityCompat.requestPermissions(context, new String[]{Manifest.permission.ACCESS_FINE_LOCATION}, LOCATION_PERMISSION_REQUEST);
-            Log.d("Location","Location Permissions denied!");
-            return result;
-
-        }
-        locationManager.requestSingleUpdate(LocationManager.GPS_PROVIDER, fbLocListener,null);
-
-
-        return result;
-    }
-    */
-
     public interface FBLocationListener {
         public void locationChangedStart(double lat, double lon, float acc, double alt);
         public void locationChangedStop(double lat, double lon, float acc, double alt);
