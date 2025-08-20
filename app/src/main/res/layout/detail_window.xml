@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/actDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/high_start_time"
+        android:textSize="20sp"
+        android:textColor="#00f"
+        android:textAlignment="center" />
+    <TextView
+        android:id="@+id/actLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:text="@string/high_end_location"
+        android:textSize="30sp"
+        android:textColor="#00f"
+        android:textAlignment="center" />
+
+    <TableLayout
+        android:id="@+id/table"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:stretchColumns="3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TableRow
+            android:id="@+id/tableRowTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tableRowTitle1"
+                style="@style/TableRowTextStyle"
+                android:text="@string/table_para" />
+            <TextView
+                android:id="@+id/tableRowTitle2"
+                style="@style/TableRowTextStyle"
+                android:text="@string/table_beg" />
+            <TextView
+                android:id="@+id/tableRowTitle3"
+                style="@style/TableRowTextStyle"
+                android:text="@string/table_end" />
+            <TextView
+                android:id="@+id/tableRowTitle4"
+                style="@style/TableRowTextStyle"
+                android:text="@string/table_result" />
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/ele_0_1"
+                style="@style/TableRowTextStyle"
+                android:text="@string/table_typ" />
+            <TextView
+                android:id="@+id/ele_0_2"
+                style="@style/TableRowTextStyle"
+                android:text="@string/empty" />
+            <TextView
+                android:id="@+id/ele_0_3"
+                style="@style/TableRowTextStyle"
+                android:text="@string/empty" />
+            <TextView
+                android:id="@+id/ele_0_4"
+                style="@style/TableRowTextStyle"
+                android:text="@string/empty" />
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/ele_1_1"
+                style="@style/TableRowTextStyle"
+                android:text="@string/table_time" />
+            <TextView
+                android:id="@+id/ele_1_2"
+                style="@style/TableRowTextStyle"
+                android:text="@string/empty" />
+            <TextView
+                android:id="@+id/ele_1_3"
+                style="@style/TableRowTextStyle"
+                android:text="@string/empty" />
+            <TextView
+                android:id="@+id/ele_1_4"
+                style="@style/TableRowTextStyle"
+                android:text="@string/empty" />
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/ele_2_1"
+                style="@style/TableRowTextStyle"
+                android:text="@string/table_km" />
+            <TextView
+                android:id="@+id/ele_2_2"
+                style="@style/TableRowTextStyle"
+                android:text="@string/empty" />
+            <TextView
+                android:id="@+id/ele_2_3"
+                style="@style/TableRowTextStyle"
+                android:text="@string/empty" />
+            <TextView
+                android:id="@+id/ele_2_4"
+                style="@style/TableRowTextStyle"
+                android:text="@string/empty" />
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRowTrack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/ele_track"
+            style="@style/TableRowTextStyle"
+            android:text="@string/table_track" />
+        <TextView
+            android:id="@+id/ele_track_file"
+            style="@style/TableRowTextStyleTitle"
+            android:layout_span="2"
+            android:clickable="true"
+            android:text="@string/empty" />
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/ele_3_1"
+                style="@style/TableRowTextStyle"
+                android:text="@string/table_long" />
+            <TextView
+                android:id="@+id/ele_3_2"
+                style="@style/TableRowTextStyle"
+                android:text="@string/empty" />
+            <TextView
+                android:id="@+id/ele_3_3"
+                style="@style/TableRowTextStyle"
+                android:text="@string/empty" />
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/ele_4_1"
+                style="@style/TableRowTextStyle"
+                android:text="@string/table_lat" />
+            <TextView
+                android:id="@+id/ele_4_2"
+                style="@style/TableRowTextStyle"
+                android:text="@string/empty" />
+            <TextView
+                android:id="@+id/ele_4_3"
+                style="@style/TableRowTextStyle"
+                android:text="@string/empty" />
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/ele_5_1"
+                style="@style/TableRowTextStyle"
+                android:text="@string/table_city" />
+            <TextView
+                android:id="@+id/ele_5_2"
+                style="@style/TableRowTextStyle"
+                android:text="@string/empty" />
+            <TextView
+                android:id="@+id/ele_5_3"
+                style="@style/TableRowTextStyle"
+                android:text="@string/empty" />
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/ele_6_1"
+                style="@style/TableRowTextStyle"
+                android:text="@string/table_loc" />
+            <TextView
+                android:id="@+id/ele_6_2"
+                style="@style/TableRowTextStyle"
+                android:text="@string/empty" />
+            <TextView
+                android:id="@+id/ele_6_3"
+                style="@style/TableRowTextStyle"
+                android:text="@string/empty" />
+        </TableRow>
+    </TableLayout>
+</LinearLayout>

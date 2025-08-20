@@ -1,0 +1,95 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes' ?>
+<gpx version="1.1" creator="OsmAnd~" xmlns="http://www.topografix.com/GPX/1/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd">
+  <metadata>
+    <name>2025-08-02_16-31_Sat</name>
+  </metadata>
+  <trk>
+    <trkseg>
+      <trkpt lat="53.5584572" lon="9.9544654">
+        <ele>65.546</ele>
+        <time>2025-08-02T14:31:24Z</time>
+        <hdop>6.788</hdop>
+      </trkpt>
+      <trkpt lat="53.5584981" lon="9.9544492">
+        <ele>72.293</ele>
+        <time>2025-08-02T14:31:39Z</time>
+        <hdop>3.79</hdop>
+      </trkpt>
+      <trkpt lat="53.5584954" lon="9.9544484">
+        <ele>72.932</ele>
+        <time>2025-08-02T14:31:55Z</time>
+        <hdop>3.79</hdop>
+      </trkpt>
+      <trkpt lat="53.5584953" lon="9.9544489">
+        <ele>73.009</ele>
+        <time>2025-08-02T14:32:10Z</time>
+        <hdop>3.79</hdop>
+      </trkpt>
+      <trkpt lat="53.5584951" lon="9.9544488">
+        <ele>72.579</ele>
+        <time>2025-08-02T14:32:26Z</time>
+        <hdop>9.935</hdop>
+      </trkpt>
+    </trkseg>
+    <trkseg>
+      <trkpt lat="53.5447159" lon="9.9525792">
+        <ele>79.512</ele>
+        <time>2025-08-02T15:02:06Z</time>
+        <hdop>15.726</hdop>
+        <extensions>
+          <speed>1.04</speed>
+        </extensions>
+      </trkpt>
+      <trkpt lat="53.5448406" lon="9.9527163">
+        <ele>43.824</ele>
+        <time>2025-08-02T15:03:37Z</time>
+        <hdop>3.79</hdop>
+      </trkpt>
+      <trkpt lat="53.544843" lon="9.9527163">
+        <ele>44.186</ele>
+        <time>2025-08-02T15:03:52Z</time>
+        <hdop>3.79</hdop>
+      </trkpt>
+      <trkpt lat="53.5448028" lon="9.9526761">
+        <ele>54.449</ele>
+        <time>2025-08-02T15:09:13Z</time>
+        <hdop>13.817</hdop>
+      </trkpt>
+      <trkpt lat="53.545767" lon="9.9575988">
+        <ele>47.401</ele>
+        <time>2025-08-02T15:09:29Z</time>
+        <hdop>3.79</hdop>
+      </trkpt>
+      <trkpt lat="53.5457634" lon="9.9576025">
+        <ele>47.863</ele>
+        <time>2025-08-02T15:09:45Z</time>
+        <hdop>3.79</hdop>
+      </trkpt>
+      <trkpt lat="53.5457552" lon="9.9576026">
+        <ele>48.153</ele>
+        <time>2025-08-02T15:10:01Z</time>
+        <hdop>3.79</hdop>
+      </trkpt>
+      <trkpt lat="53.5457568" lon="9.957593">
+        <ele>47.733</ele>
+        <time>2025-08-02T15:10:16Z</time>
+        <hdop>3.79</hdop>
+      </trkpt>
+      <trkpt lat="53.5457567" lon="9.9575931">
+        <ele>47.733</ele>
+        <time>2025-08-02T15:10:32Z</time>
+        <hdop>3.79</hdop>
+      </trkpt>
+      <trkpt lat="53.5457566" lon="9.9575931">
+        <ele>47.744</ele>
+        <time>2025-08-02T15:10:47Z</time>
+        <hdop>3.79</hdop>
+      </trkpt>
+      <trkpt lat="53.5457565" lon="9.9575933">
+        <ele>47.741</ele>
+        <time>2025-08-02T15:11:02Z</time>
+        <hdop>3.79</hdop>
+      </trkpt>
+    </trkseg>
+  </trk>
+</gpx>

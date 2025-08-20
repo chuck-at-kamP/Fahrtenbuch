@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<gpx xmlns="http://www.topografix.com/GPX/1/1" version="1.1" creator="OSMTracker for Android™ - https://github.com/labexp/osmtracker-android" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd ">
+	<metadata>
+		<name>2025-08-03_15-40-17</name>
+	</metadata>
+	<trk>
+		<name><![CDATA[Aufgezeichnet mit OSMTracker für Android™]]></name>
+		<trkseg>
+			<trkpt lat="53.57848122" lon="9.97768646">
+				<ele>55.64459228515625</ele>
+				<time>2025-08-03T13:40:27Z</time>
+				<extensions>
+					<speed>16.809999465942383</speed>
+				</extensions>
+			</trkpt>
+			<trkpt lat="53.57867604" lon="9.97780215">
+				<ele>49.53668212890625</ele>
+				<time>2025-08-03T13:40:28Z</time>
+				<extensions>
+					<speed>17.469999313354492</speed>
+				</extensions>
+			</trkpt>
+			<trkpt lat="53.57879486" lon="9.97796448">
+				<ele>49.58184814453125</ele>
+				<time>2025-08-03T13:40:29Z</time>
+				<extensions>
+					<speed>17.639999389648438</speed>
+				</extensions>
+			</trkpt>
+			<trkpt lat="53.57893035" lon="9.97814065">
+				<ele>50.3792724609375</ele>
+				<time>2025-08-03T13:40:30Z</time>
+				<extensions>
+					<speed>18.190000534057617</speed>
+				</extensions>
+			</trkpt>
+			<trkpt lat="53.57905364" lon="9.97832441">
+				<ele>50.46240234375</ele>
+				<time>2025-08-03T13:40:31Z</time>
+				<extensions>
+					<speed>18.709999084472656</speed>
+				</extensions>
+			</trkpt>
+			<trkpt lat="53.57918663" lon="9.97851049">
+				<ele>50.93927001953125</ele>
+				<time>2025-08-03T13:40:32Z</time>
+				<extensions>
+					<speed>18.530000686645508</speed>
+				</extensions>
+			</trkpt>
+			<trkpt lat="53.57931392" lon="9.97869525">
+				<ele>51.46441650390625</ele>
+				<time>2025-08-03T13:40:33Z</time>
+				<extensions>
+					<speed>18.440000534057617</speed>
+				</extensions>
+			</trkpt>
+			<trkpt lat="53.5794408" lon="9.9788789">
+				<ele>52.054443359375</ele>
+				<time>2025-08-03T13:40:34Z</time>
+				<extensions>
+					<speed>18.389999389648438</speed>
+				</extensions>
+			</trkpt>
+			<trkpt lat="53.57956517" lon="9.97905767">
+				<ele>52.2296142578125</ele>
+				<time>2025-08-03T13:40:35Z</time>
+				<extensions>
+					<speed>18.389999389648438</speed>
+				</extensions>
+			</trkpt>
+			<trkpt lat="53.57969042" lon="9.97924102">
+				<ele>52.44659423828125</ele>
+				<time>2025-08-03T13:40:36Z</time>
+				<extensions>
+					<speed>18.309999465942383</speed>
+				</extensions>
+			</trkpt>
+			<trkpt lat="53.57981896" lon="9.97941829">
+				<ele>53.29669189453125</ele>
+				<time>2025-08-03T13:40:37Z</time>
+				<extensions>
+					<speed>18.280000686645508</speed>
+				</extensions>
+			</trkpt>
+			<trkpt lat="53.57993691" lon="9.97960329">
+				<ele>52.8153076171875</ele>
+				<time>2025-08-03T13:40:38Z</time>
+				<extensions>
+					<speed>18.270000457763672</speed>
+				</extensions>
+			</trkpt>
+			<trkpt lat="53.58005873" lon="9.97978671">
+				<ele>52.91162109375</ele>
+				<time>2025-08-03T13:40:39Z</time>
+				<extensions>
+					<speed>18.190000534057617</speed>
+				</extensions>
+			</trkpt>
+			<trkpt lat="53.58017514" lon="9.97996819">
+				<ele>52.55877685546875</ele>
+				<time>2025-08-03T13:40:40Z</time>
+				<extensions>
+					<speed>18.25</speed>
+				</extensions>
+			</trkpt>
+			<trkpt lat="53.58029235" lon="9.98015534">
+				<ele>52.3707275390625</ele>
+				<time>2025-08-03T13:40:41Z</time>
+				<extensions>
+					<speed>18.09000015258789</speed>
+				</extensions>
+			</trkpt>
+		</trkseg>
+	</trk>
+</gpx>

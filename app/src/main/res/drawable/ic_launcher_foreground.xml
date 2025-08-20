@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="100"
+    android:viewportHeight="100">
+  <group android:scaleX="0.44"
+      android:scaleY="0.44"
+      android:translateX="28.203703"
+      android:translateY="22.5">
+
+          <!--
+          A - elliptical arc
+          A rx ry rotation large-arc-flag sweep-flag x y
+          rx,ry - radius
+          rotation - angle in degrees
+          large-arc-flag - long or short way
+          x, y - end point of arc
+          -->
+          <path
+              android:fillColor="#bbbbbb"
+              android:pathData="
+              M5,78 l7,0 m16,0 l44,0 m16,0 l5,0
+              0,-40 -65,0 -10,20
+              q -12 0 -13,20"
+              android:strokeWidth="2"
+              android:strokeColor="#555555" />
+          <path
+              android:fillColor="#bbbbff"
+              android:strokeWidth="1"
+              android:strokeColor="#2255ff"
+              android:pathData="M25,50 l-3,8 3,0 Z" />
+          <path
+              android:fillColor="#eeeeff"
+              android:strokeWidth="1"
+              android:strokeColor="#2255ff"
+              android:pathData="M30,42 l-1,16 18,0 0,-16Z" />
+          <path
+              android:fillColor="#ccccff"
+              android:strokeWidth="1"
+              android:strokeColor="#2255ff"
+              android:pathData="M50,42 l0,16 38,0 0,-16Z" />
+          <path
+              android:fillColor="#ffffff"
+              android:strokeWidth="5"
+              android:strokeColor="#000000"
+              android:pathData="M20,73
+              A6 6 0 1 1 20 73 Z" />
+          <path
+              android:fillColor="#ffffff"
+              android:strokeWidth="5"
+              android:strokeColor="#000000"
+              android:pathData="M80,73
+              A6 6 0 1 1 80 73 Z" />
+
+  </group>
+</vector>

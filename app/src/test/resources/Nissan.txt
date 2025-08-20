@@ -1,0 +1,43 @@
+
+OBD2 Bluetooth Adapter:
+https://www.amazon.de/HHOBD%C2%AE-Bluetooth-Android-Diagnose-Interface/dp/B00NSNNNOQ/ref=sr_1_1?ie=UTF8&qid=1461401827&sr=8-1&keywords=obd2+diagnoseger%C3%A4t
+
+OBD2 Programmier Tips:
+https://www.obd-2.de/programmierer-tips.html
+
+OBD2 Allgemein
+https://www.obd-2.de/obd-2-allgemeine-infos.html
+
+------------------------------------------------------------
+
+https://www.nissanboard.de/forum/index.php?thread/175096-nissan-obd1-schnittstelle-mit-bluetooth-und-android-auslesen/
+
+Falls es jemanden interessiert:
+
+Es gibt ja schon viele Jahre das Programm Nissan Data Scan um Informationen aus unseren alten Nissan Fahrzeugen auszulesen, dies passiert meist mit PC und Datenkabel. Nun gibt es seit einiger Zeit das Programm auch für Android. Dafür kann man ein gerootetes Android-Handy mit USB-Host-Modus und Kabel nutzen, doch besser wäre natürlich eine kabellose Variante. Auf der Webseite von Nissan Datan Scan sind die möglichen Adapter dafür aufgeführt.
+
+Ich habe mir einen günstigen Nissan-Consult-Adapter auf RS232 besorgt und dazu ein günstiges Bluetooth-Modul.
+
+[IMG: http://www.nissanfreunde-dresden.de/dokumente/nds1-adapter/DSC_0613.jpg]
+
+Das Bluetooth-Modul wird mit 4 Kabeln mit der Platine des Nissan-Consult-Adapter verbunden und auch gleich mit im Gehäuse untergebracht.
+
+[IMG: http://www.nissanfreunde-dresden.de/dokumente/nds1-adapter/DSC_0614.jpg]
+
+Danach noch die Software (auch als Testversion erhältlich) installieren und die Verbindung zum Bluetooth-Adapter herstellen.
+
+[IMG: http://www.nissanfreunde-dresden.de/dokumente/nds1-adapter/DSC_0615.jpg]
+
+Und schon können Informationen direkt kabellos auf dem Android-Gerät ausgegeben und sogar der Fehlerspeicher gelöscht werden. Ich finde das sehr hilfreich. Vielleicht der ein oder andere auch.
+
+[IMG: http://www.nissanfreunde-dresden.de/dokumente/nds1-adapter/IMG_20150906_195845.jpg]
+
+Den Adapter kann man auch bequem hinten der Verkleidung verstecken.
+
+Grüße
+Gerd
+
+
+
+
+

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/startEditor"
+        android:title="@string/popup_external_editor" />
+    <item android:id="@+id/startGPXSee"
+        android:title="@string/popup_external_see" />
+    <item android:id="@+id/startOsmand"
+        android:title="@string/popup_external_osmand" />
+    <item android:id="@+id/startOsmtracker"
+        android:title="@string/popup_external_osmtracker" />
+</menu>

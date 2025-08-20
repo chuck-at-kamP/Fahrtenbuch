@@ -1,0 +1,64 @@
+<resources>
+    <string name="app_name">Fahrtenbuch</string>
+    <string name="start_button">Start</string>
+    <string name="stop_button">Stop</string>
+    <string name="break_button">Break</string>
+    <string name="fahrt_radio">Fahrt</string>
+    <string name="laden_radio">Laden</string>
+    <string name="save_button">Speichern</string>
+    <string name="clear_button">Verwerfen</string>
+
+    <string name="menu_show">Liste</string>
+    <string name="menu_input">Starte</string>
+    <string name="menu_extra">Extra</string>
+    <string name="menu_help">Hilfe</string>
+    <string name="menu_descript">Description</string>
+    <string name="hamburger"> \u2630 </string>
+
+    <string name="high_start_time">Start Time</string>
+    <string name="high_end_location">End Location</string>
+
+    <string name="table_typ">Type</string>
+    <string name="table_para">Name</string>
+    <string name="table_beg">Beginn</string>
+    <string name="table_end">Ende</string>
+    <string name="table_result">Ergebnis</string>
+    <string name="table_time">Zeit</string>
+    <string name="table_km">km</string>
+    <string name="table_long">Longitude</string>
+    <string name="table_lat">Latitude</string>
+    <string name="table_loc">Location</string>
+    <string name="table_city">City</string>
+    <string name="table_start_km">Start km-Stand</string>
+    <string name="table_ende_km">Ende km-Stand</string>
+    <string name="table_track">Track</string>
+
+
+
+    <string name="nav_open">Open</string>
+    <string name="nav_close">Close</string>
+
+    <!-- ############ Liste der Fahrten -->
+    <string name="listTitleNr">NR</string>
+    <string name="listTitleTime">ZEIT</string>
+    <string name="listTitleType">TYP</string>
+    <string name="listTitleCity">STADT</string>
+    <string name="listTitleDuration">DAUER</string>
+    <string name="listTitleKm">STRECKE</string>
+    <string name="empty">---</string>
+
+    <string name="popup_external_editor">Editor Markor</string>
+    <string name="popup_external_see">Map GPXSee</string>
+    <string name="popup_external_osmand">Map OSMand</string>
+    <string name="popup_external_osmtracker">Map OSMTracker</string>
+
+    <!-- ########### Extra Window -->
+    <string name="extra_location">Standort Abfrage</string>
+    <string name="extra_backup">Backup erstellen</string>
+    <string name="extra_restore">Backup zurück spielen</string>
+    <string name="extra_intent">Anzeige Apps</string>
+    <string name="extra_files_dir">Verzeichnis</string>
+    <string name="extra_dirs">Verzeichnisse</string>
+    <string name="extra_files">Dateien</string>
+    <string name="extra_status"> Ergebnis </string>
+</resources>

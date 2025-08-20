@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main">
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RadioButton
+            android:id="@+id/radioButton3"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:button="@drawable/outline_directions_car_24"
+            android:layout_marginStart="60dp"
+            android:scaleX="2"
+            android:scaleY="2"
+            android:textSize="12sp"
+            android:paddingStart="5dp"
+            android:paddingEnd="10dp"
+            android:text="@string/fahrt_radio" />
+
+        <RadioButton
+            android:id="@+id/radioButton4"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:button="@drawable/outline_ev_station_24"
+            android:layout_marginStart="40dp"
+            android:scaleX="2"
+            android:scaleY="2"
+            android:textSize="12sp"
+            android:paddingStart="5dp"
+            android:paddingEnd="10dp"
+            android:text="@string/laden_radio" />
+
+    </RadioGroup>
+
+    <LinearLayout
+        android:id="@+id/button_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup">
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="10dp"
+            android:text="@string/start_button" />
+        <!--
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="10dp"
+            android:text="@string/break_button" />
+            -->
+
+        <Button
+            android:id="@+id/button6"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="10dp"
+            android:text="@string/stop_button" />
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintHorizontal_bias="0.462"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button">
+
+        <LinearLayout
+            android:id="@+id/list"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TableLayout
+                android:id="@+id/table"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+                <TableRow
+                    android:id="@+id/tableRowTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/tableRowTitle1"
+                        style="@style/TableRowTextStyle"
+                        android:text="@string/table_para" />
+                    <TextView
+                        android:id="@+id/tableRowTitle2"
+                        style="@style/TableRowTextStyle"
+                        android:text="@string/table_beg" />
+                    <TextView
+                        android:id="@+id/tableRowTitle3"
+                        style="@style/TableRowTextStyle"
+                        android:text="@string/table_end" />
+                </TableRow>
+                <TableRow
+                    android:id="@+id/tableRow0"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/ele_0_1"
+                        style="@style/TableRowTextStyle"
+                        android:text="@string/table_typ" />
+                    <TextView
+                        android:id="@+id/ele_0_2"
+                        style="@style/TableRowTextStyle"
+                        android:text="@string/empty" />
+                    <TextView
+                        android:id="@+id/ele_0_3"
+                        style="@style/TableRowTextStyle"
+                        android:text="@string/empty" />
+                </TableRow>
+                <TableRow
+                    android:id="@+id/tableRow1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/ele_1_1"
+                        style="@style/TableRowTextStyle"
+                        android:text="@string/table_time" />
+                    <TextView
+                        android:id="@+id/ele_1_2"
+                        style="@style/TableRowTextStyle"
+                        android:text="@string/empty" />
+                    <TextView
+                        android:id="@+id/ele_1_3"
+                        style="@style/TableRowTextStyle"
+                        android:text="@string/empty" />
+                    <TextView
+                        android:id="@+id/ele_1_4"
+                        style="@style/TableRowTextStyle"
+                        android:text="@string/empty" />
+                </TableRow>
+                <TableRow
+                    android:id="@+id/tableRow2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/ele_2_1"
+                        style="@style/TableRowTextStyle"
+                        android:labelFor="@id/ele_2_2"
+                        android:text="@string/table_km" />
+                    <EditText
+                        android:id="@+id/ele_2_2"
+                        style="@style/TableRowTextStyle"
+                        android:autofillHints="Bitte Start km-Stand eintragen."
+                        android:background="@drawable/edit_text_border"
+                        android:inputType="number"
+                        android:hint="@string/table_start_km" />
+                    <EditText
+                        android:id="@+id/ele_2_3"
+                        style="@style/TableRowTextStyle"
+                        android:autofillHints="Bitte Ende km-Stand eintragen."
+                        android:background="@drawable/edit_text_border"
+                        android:inputType="number"
+                        android:hint="@string/table_ende_km" />
+
+                    <TextView
+                        android:id="@+id/ele_2_4"
+                        style="@style/TableRowTextStyle"
+                        android:text="@string/empty" />
+                </TableRow>
+                <TableRow
+                    android:id="@+id/tableRowTrack"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/ele_track"
+                        style="@style/TableRowTextStyle"
+                        android:text="@string/table_track" />
+                    <TextView
+                        android:id="@+id/ele_track_file"
+                        style="@style/TableRowTextStyle"
+                        android:layout_span="2"
+                        android:clickable="false"
+                        android:text="@string/empty" />
+                </TableRow>
+                <TableRow
+                    android:id="@+id/tableRow3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/ele_3_1"
+                        style="@style/TableRowTextStyle"
+                        android:text="@string/table_long" />
+                    <TextView
+                        android:id="@+id/ele_3_2"
+                        style="@style/TableRowTextStyle"
+                        android:text="@string/empty" />
+                    <TextView
+                        android:id="@+id/ele_3_3"
+                        style="@style/TableRowTextStyle"
+                        android:text="@string/empty" />
+                </TableRow>
+                <TableRow
+                    android:id="@+id/tableRow4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/ele_4_1"
+                        style="@style/TableRowTextStyle"
+                        android:text="@string/table_lat" />
+                    <TextView
+                        android:id="@+id/ele_4_2"
+                        style="@style/TableRowTextStyle"
+                        android:text="@string/empty" />
+                    <TextView
+                        android:id="@+id/ele_4_3"
+                        style="@style/TableRowTextStyle"
+                        android:text="@string/empty" />
+                </TableRow>
+                <TableRow
+                    android:id="@+id/tableRow5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/ele_5_1"
+                        style="@style/TableRowTextStyle"
+                        android:text="@string/table_city" />
+                    <TextView
+                        android:id="@+id/ele_5_2"
+                        style="@style/TableRowTextStyle"
+                        android:text="@string/empty" />
+                    <TextView
+                        android:id="@+id/ele_5_3"
+                        style="@style/TableRowTextStyle"
+                        android:text="@string/empty" />
+                </TableRow>
+                <TableRow
+                    android:id="@+id/tableRow6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/ele_6_1"
+                        style="@style/TableRowTextStyle"
+                        android:text="@string/table_loc" />
+                    <TextView
+                        android:id="@+id/ele_6_2"
+                        style="@style/TableRowTextStyle"
+                        android:text="@string/empty" />
+                    <TextView
+                        android:id="@+id/ele_6_3"
+                        style="@style/TableRowTextStyle"
+                        android:text="@string/empty" />
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/save_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_layout" />
+    <Button
+        android:id="@+id/button_clear"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/clear_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/button"
+        app:layout_constraintTop_toBottomOf="@+id/button_layout" />
+
+    <TextView
+        android:id="@+id/actDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/high_start_time"
+        android:textSize="20sp"
+        android:textColor="#f00"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView2"/>
+    <TextView
+        android:id="@+id/actCity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/high_end_location"
+        android:textSize="20sp"
+        android:textColor="#f00"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/actDate"/>
+    <TextView
+        android:id="@+id/actLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/high_end_location"
+        android:textSize="20sp"
+        android:textColor="#f00"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/actCity"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
