@@ -42,9 +42,7 @@ public class Util {
         if(dates.length < 3) {
             Log.d("Track Timestamp","Size is less than 3! length=" + dates.length);
         }
-        StringBuilder track = new StringBuilder();
-        track.append(dates[2]).append("-").append(dates[1]).append("-").append(dates[0]).append("_").append(newTime).append(".gpx");
-        String result = track.toString();
+        String result = dates[2] + "-" + dates[1] + "-" + dates[0] + "_" + newTime + ".gpx";
         Log.d("Track Timestamp","Filename: " + result);
         return result;
     }
@@ -56,15 +54,13 @@ public class Util {
         String currentGpxString = dateFormat2.format(act);
         String currentDateString = dateFormat1.format(act);
         Log.d("Util getDate()", "Date date=" + currentDateString + ", gpx=" + currentGpxString);
-        String[] ret = { currentDateString, currentGpxString };
-        return ret;
+        return new String[]{ currentDateString, currentGpxString };
     }
     static public String timestamp(long diff) {
         long hours = diff / 3600;
         long minutes = (diff % 3600) / 60;
         long seconds = diff % 60;
-        String timeString = String.format("%02d:%02d:%02d", hours, minutes, seconds);
-        return timeString;
+        return String.format("%02d:%02d:%02d", hours, minutes, seconds);
     }
 
 }

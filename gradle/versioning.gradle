@@ -16,11 +16,11 @@ ext.getVersionName = { ->
             }
             return stdout.toString().trim()
         } else {
-            return branch;
+            return branch
         }
     }
     catch (ignored) {
-        return null;
+        return null
     }
 }
 
