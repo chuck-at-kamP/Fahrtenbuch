@@ -53,8 +53,7 @@ public class FBSave {
             Log.w("FBSave backup()","File copy failed!");
             return null;
         }
-        String[] result = {src.getPath(),dst.getPath()};
-        return result;
+        return new String[]{src.getPath(),dst.getPath()};
     }
     public String[] restore() {
         // --- Source File /Documents/fahrtenbuch/backup/fahrtenbuch.csv
@@ -79,8 +78,7 @@ public class FBSave {
             Log.w("FBSave restore()","File does not exist! file=" + src.getPath());
             return null;
         }
-        String[] result = {src.getPath(),dst.getPath()};
-        return result;
+        return new String[]{src.getPath(),dst.getPath()};
     }
     private boolean copy(File src, File dst) {
         try {
@@ -108,8 +106,8 @@ public class FBSave {
     auswählen können.
      */
     private String createBackupFolder() {
-        File dir = null;
-        String path = null;
+        File dir;
+        String path;
         try {
             path = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOCUMENTS) + "/fahrtenbuch/backup";
             dir = new File(path);

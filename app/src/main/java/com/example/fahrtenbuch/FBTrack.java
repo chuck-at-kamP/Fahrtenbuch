@@ -177,10 +177,11 @@ public class FBTrack {
 
     /**
      * This was a trial to find path names on android.
-     *
+     * <p>
      * The path structure on android ist not understandable.
+     * </p>
      *
-     * @return
+     * @return String Path for Media files.
      */
     public String getPathMedia() {
         String path = null;
@@ -196,13 +197,15 @@ public class FBTrack {
 
     /**
      * Creates a path like OSMTracker stores its GPX tracks.
-     *
+     * <p>
      * Path for OSMTracker files: /Documents/osmtracker/2025-08-15_17-30-10/2025-08-15_17-30-10.gpx
-     *
+     * </p>
+     * <p>
      * Creates Path /Documents/osmtracker/2025-08-15_17-30-10/ from filename 2025-08-15_17-30-10.gpx
+     * </p>
      *
-     * @param filename
-     * @return
+     * @param filename for gpx file.
+     * @return true or false
      */
     public boolean createFolderOsmtracker(String filename) {
         String pathOsmtracker = getPathOsmtracker();
@@ -239,10 +242,10 @@ public class FBTrack {
     /**
      * Writes XML to folder/file.
      *
-     * @param folder
-     * @param filename
-     * @param xml
-     * @return
+     * @param folder of gpx file
+     * @param filename of gpx file
+     * @param xml string
+     * @return true or false
      */
     public boolean createGpxFile(String folder, String filename, String xml) {
         Log.d("FBTrack createGpxFile()","XML File, In folder=" + folder + ", file=" + filename);
@@ -258,7 +261,7 @@ public class FBTrack {
             e.printStackTrace();
             return false;
         }
-        Log.d("FBTrack createGpxFile()", "XML file created. file=" + fos.toString());
+        Log.d("FBTrack createGpxFile()", "XML file created. file=" + fos);
         return true;
     }
 
@@ -268,13 +271,13 @@ public class FBTrack {
 
     public GPX example2() {
         GPX.Metadata m = new GPX.Metadata(filename);
-        Log.d("FBTrack example2()", "Object GPX.Metadata obj=" + m.toString());
+        Log.d("FBTrack example2()", "Object GPX.Metadata obj=" + m);
         GPX.TrkPt p1 = new GPX.TrkPt("65.546","2025-08-02T14:31:24Z","6.788", "53.5584572", "9.9544654");
-        Log.d("FBTrack example2()", "Object GPX.TrkPt obj=" + p1.toString());
+        Log.d("FBTrack example2()", "Object GPX.TrkPt obj=" + p1);
         GPX.TrkPt p2 = new GPX.TrkPt("47.741","2025-08-02T15:11:02Z","3.79","53.5457565","9.9575933");
-        Log.d("FBTrack example2()", "Object GPX.TrkPt obj=" + p1.toString());
+        Log.d("FBTrack example2()", "Object GPX.TrkPt obj=" + p1);
         GPX.TrkSeg s = new GPX.TrkSeg();
-        Log.d("FBTrack example2()", "Object GPX.TrkSeg obj=" + s.toString());
+        Log.d("FBTrack example2()", "Object GPX.TrkSeg obj=" + s);
         if(s != null) {
             s.add(p1);
             Log.d("FBTrack example2()", "Object GPX.TrkSeg added.");
@@ -284,9 +287,9 @@ public class FBTrack {
             Log.e("FBTrack example2()", "Create GPX Object, TrkSeg is null");
         }
         GPX.Trk t = new GPX.Trk("Fahrtenbuch Track",s);
-        Log.d("FBTrack example2()", "Object GPX.TrkSeg obj=" + t.toString());
+        Log.d("FBTrack example2()", "Object GPX.TrkSeg obj=" + t);
         GPX gpx = new GPX(m,t);
-        Log.d("FBTrack example2()", "Object GPX.TrkSeg obj=" + gpx.toString());
+        Log.d("FBTrack example2()", "Object GPX.TrkSeg obj=" + gpx);
         return gpx;
     }
 
@@ -294,9 +297,9 @@ public class FBTrack {
      * Creates file in app folder /data/data/com.example.fahrtenbuch/files/
      * 2025-08-16_09-56-31.gpx
      *
-     * @param filename
-     * @param xml
-     * @return
+     * @param filename Filename
+     * @param xml string
+     * @return true or false
      */
     public boolean createFile(String filename, String xml) {
         FileOutputStream fileos = null;
@@ -317,7 +320,7 @@ public class FBTrack {
             e.printStackTrace();
             return false;
         }
-        Log.d("FBTrack createFile()", "File created. file=" + filename + ", obj=" + fileos.toString());
+        Log.d("FBTrack createFile()", "File created. file=" + filename + ", obj=" + fileos);
         return true;
     }
     public boolean createExample1(String filename) {

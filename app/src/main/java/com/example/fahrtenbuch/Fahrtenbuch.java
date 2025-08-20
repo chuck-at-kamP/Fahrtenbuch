@@ -152,15 +152,15 @@ public class Fahrtenbuch {
                 String[] address = fbLocation.getAddress(lon,lat);
                 actCity.setText(address[2]);
 
-                cellLatEnd.setText(String.valueOf(String.valueOf(lat)));
-                cellLonEnd.setText(String.valueOf(String.valueOf(lon)));
+                cellLatEnd.setText(String.valueOf(lat));
+                cellLonEnd.setText(String.valueOf(lon));
                 cellCityEnd.setText(address[0]);
                 cellAddrEnd.setText(address[2]);
 
                 map.put("end_city", address[0]);
                 map.put("end_loc", address[1]);
-                map.put("end_long", String.valueOf(String.valueOf(lon)));
-                map.put("end_lat", String.valueOf(String.valueOf(lat)));
+                map.put("end_long", String.valueOf(lon));
+                map.put("end_lat", String.valueOf(lat));
                 // ---------------- Set Track ------------------------------------
                 if(radioString.equals("Fahrt")) {
                     String[] currentDateString = Util.getDate();

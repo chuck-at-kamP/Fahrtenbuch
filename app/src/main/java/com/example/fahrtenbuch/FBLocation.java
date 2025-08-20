@@ -66,9 +66,9 @@ public class FBLocation {
     }
 
     public interface FBLocationListener {
-        public void locationChangedStart(double lat, double lon, float acc, double alt);
-        public void locationChangedStop(double lat, double lon, float acc, double alt);
-        public void locationChangedTimer(double lat, double lon, float acc, double alt);
+        void locationChangedStart(double lat, double lon, float acc, double alt);
+        void locationChangedStop(double lat, double lon, float acc, double alt);
+        void locationChangedTimer(double lat, double lon, float acc, double alt);
     }
 
     public void getCurrentLocation(String order) {
@@ -95,14 +95,19 @@ public class FBLocation {
                                 double alt = location.getAltitude();
                                 Log.d("FBLocation getCurrentLocation()","Location! lat=" + lat + ", long=" + lon);
                                 if (listener != null) {
-                                    if(order.equals("start")) {
-                                        listener.locationChangedStart(lat,lon,acc,alt); // <---- fire listener here
-                                    }
-                                    else if(order.equals("stop")) {
-                                        listener.locationChangedStop(lat,lon,acc,alt); // <---- fire listener here
-                                    }
-                                    else if(order.equals("timer")) {
-                                        listener.locationChangedTimer(lat,lon,acc,alt); // <---- fire listener here
+                                    switch (order) {
+                                        case "start":
+                                            listener.locationChangedStart(lat, lon, acc, alt); // <---- fire listener here
+
+                                            break;
+                                        case "stop":
+                                            listener.locationChangedStop(lat, lon, acc, alt); // <---- fire listener here
+
+                                            break;
+                                        case "timer":
+                                            listener.locationChangedTimer(lat, lon, acc, alt); // <---- fire listener here
+
+                                            break;
                                     }
                                 }
                             }
@@ -123,17 +128,17 @@ public class FBLocation {
         String addressString = "Unknown";
         String address = "Unknown";
         String city = "Unknown";
-        if(addresses.size() > 0) {
+        assert addresses != null;
+        if(!addresses.isEmpty()) {
             address = addresses.get(0).getAddressLine(0);
             city = addresses.get(0).getLocality();
             String state = addresses.get(0).getAdminArea();
             String zip = addresses.get(0).getPostalCode();
             String country = addresses.get(0).getCountryName();
             String street = addresses.get(0).getSubLocality();
-            Log.d("FBLocation getAddress()", "Adress city=" + city + ", zip=" + zip + ", country=" + country + ", street=" + street);
+            Log.d("FBLocation getAddress()", "Adress city=" + city + ", zip=" + zip + ", country=" + country + ", street=" + street + ", state=" + state);
             addressString = address.replace(",", "\n");
         }
-        String[] result = { city, address, addressString };
-        return result;
+        return new String[]{ city, address, addressString };
     }
 }
