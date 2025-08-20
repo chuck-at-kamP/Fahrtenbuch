@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <vector xmlns:android="http://schemas.android.com/apk/res/android"
-    android:width="108dp"
-    android:height="108dp"
+    android:width="120dp"
+    android:height="120dp"
     android:viewportWidth="100"
     android:viewportHeight="100">
-  <group android:scaleX="0.6666667"
-      android:scaleY="0.6666667"
-      android:translateX="16.97531"
-      android:translateY="8.333333">
+  <group android:scaleX="0.55587155"
+      android:scaleY="0.55587155"
+      android:translateX="22.438036"
+      android:translateY="15.48964">
 
           <!--
           A - elliptical arc

@@ -12,6 +12,7 @@
     <string name="menu_input">Starte</string>
     <string name="menu_extra">Extra</string>
     <string name="menu_help">Hilfe</string>
+    <string name="menu_logout">Exit</string>
     <string name="menu_descript">Description</string>
     <string name="hamburger"> \u2630 </string>
 

@@ -66,6 +66,10 @@ public class Drawer {
                     Toast.makeText(activity, "Hier bekommst du noch keine Hilfe", Toast.LENGTH_SHORT).show();    // Show a Toast message for the Logout item
                     showHelp();
                 }
+                if (item.getItemId() == R.id.logout) {
+                    Toast.makeText(activity, "Logout", Toast.LENGTH_SHORT).show();    // Show a Toast message for the Logout item
+                    logout();
+                }
                 drawerLayout.closeDrawers();    // Close the drawer after selection
                 return true;    // Indicate that the item selection has been handled
             }
@@ -102,5 +106,11 @@ public class Drawer {
         Log.d("Menu","Show Input");
         Intent main = new Intent(activity.getApplicationContext(), MainActivity.class);
         activity.startActivity(main);
+    }
+    private void logout() {
+        Log.d("Menu","Logout");
+        activity.finishAndRemoveTask();
+        activity.finishAffinity();
+        System.exit(0);
     }
 }

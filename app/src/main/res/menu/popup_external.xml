@@ -1,11 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item android:id="@+id/startEditor"
+        android:icon="@drawable/outline_edit_road_24"
         android:title="@string/popup_external_editor" />
     <item android:id="@+id/startGPXSee"
+        android:icon="@drawable/outline_map_24"
         android:title="@string/popup_external_see" />
     <item android:id="@+id/startOsmand"
+        android:icon="@drawable/outline_map_search_24"
         android:title="@string/popup_external_osmand" />
+    <!--
     <item android:id="@+id/startOsmtracker"
         android:title="@string/popup_external_osmtracker" />
+        -->
 </menu>

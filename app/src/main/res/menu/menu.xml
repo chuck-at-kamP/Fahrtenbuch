@@ -1,11 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
         <item android:id="@+id/input"
+            android:icon="@drawable/outline_directions_car_24"
             android:title="@string/menu_input" />
         <item android:id="@+id/show"
+            android:icon="@drawable/outline_list_alt_24"
             android:title="@string/menu_show" />
         <item android:id="@+id/extra"
+            android:icon="@drawable/outline_build_24"
             android:title="@string/menu_extra" />
         <item android:id="@+id/help"
+            android:icon="@drawable/outline_help_24"
             android:title="@string/menu_help" />
+        <item android:id="@+id/logout"
+            android:icon="@drawable/outline_logout_24"
+            android:title="@string/menu_logout" />
 </menu>

@@ -11,8 +11,10 @@
     - Alle Dateien zurück spielen, auch die GPX Dateien ?
     - Andere Apps mit Intent-Möglichkeiten anzeigen?
 2. Icons sehen immer noch nicht gut aus ?
-3. Popup Farben der Auswahl der Tracks.
 5. Git Version in APK per Gradle Build nutzen.
+
+Icons in Menu:
+https://www.geeksforgeeks.org/android/how-to-customize-option-menu-of-toolbar-in-android/
 
 
 # TODO (Aus erster Testfahrt)
@@ -20,11 +22,14 @@
 3. Anzeige während der Fahrt: Nur Detailanzeige GROSS und ROT.
 4. Zugriff auf Fairphone 5 Track Dateien, App-Verzeichnis /data/data/com.example.fahrtenbuch/files
 5. Root Zugriff auf Fairphone 5 aktivieren.
+6. Temporäres Speichern von Start Daten, werden beim Neustart der App wieder aufgerufen.
+    Dadurch kann man beim Laden auch mal die Anwendung beenden und beim Neustart sind die temporären Daten wieder drin.
 
 
 # Erledigt
 
 - Erledigt:
+- OK (20.08.2025) Popup Farben der Auswahl der Tracks. (Nicht wie ich wollte (Weiss auf Blau) aber jetzt zumindest lesbar.)
 - OK (19.08.2025) Advanced Fenster für
    - OK (19.08.2025) Location abfragen.
    - OK (19.08.2025) Dateien nach Documents/ sichern (für Zugriff von Außerhalb)

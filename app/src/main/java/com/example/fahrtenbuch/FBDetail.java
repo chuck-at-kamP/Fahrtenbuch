@@ -6,6 +6,7 @@ import android.graphics.drawable.Drawable;
 import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.ContextThemeWrapper;
 import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -17,7 +18,10 @@ import java.util.HashMap;
 public class FBDetail {
     Activity activity;
 
-    TextView actDate, actLocation, type, type1, type2, begTime, endTime, resTime, begKm, endKm, resKm, track, begLon, endLon, begLat, endLat, begCity, endCity, begLoc, endLoc;
+    String typ;
+    TextView actDate, actLocation, type, type1, type2, begTime, endTime,
+            resTime, begKm, endKm, resKm, track, trackt, begLon, endLon, begLat,
+            endLat, begCity, endCity, begLoc, endLoc;
 
     FBDetail(Activity ctx) {
         activity = ctx;
@@ -26,7 +30,7 @@ public class FBDetail {
         Bundle extras = activity.getIntent().getExtras();
         if (extras != null) {
             HashMap<String, String> map = (HashMap) extras.getSerializable("map");
-            String typ = map.get("type");
+            typ = map.get("type");
             Log.d("FBDetail()","Details for " + typ);
             type.setText(typ);
             type1.setText(typ);
@@ -49,7 +53,12 @@ public class FBDetail {
                 track.setBackgroundColor(Color.argb(255, 200, 200, 200));;
             }
             else if(typ.equals("Fahrt")) {
+                trackt.setHeight(100);
+                track.setHeight(100);
                 track.setText(map.get("track"));
+                track.setTextScaleX((float) 1.7);
+                track.setTextAlignment(View.TEXT_ALIGNMENT_CENTER);
+
             }
             begLon.setText(map.get("beg_long"));
             endLon.setText(map.get("end_long"));
@@ -87,6 +96,7 @@ public class FBDetail {
         begKm = activity.findViewById(R.id.ele_2_2);
         endKm = activity.findViewById(R.id.ele_2_3);
         resKm = activity.findViewById(R.id.ele_2_4);
+        trackt = activity.findViewById(R.id.ele_track);
         track = activity.findViewById(R.id.ele_track_file);
         begLon = activity.findViewById(R.id.ele_3_2);
         endLon = activity.findViewById(R.id.ele_3_3);
@@ -120,9 +130,10 @@ public class FBDetail {
     }
 
     public void popupMenu(View view, String filename) {
-        PopupMenu popupMenu = new PopupMenu(activity, view);
+        ContextThemeWrapper ctw = new ContextThemeWrapper(activity, R.style.MenuFontStyle); // Um die Farben des Popup von (Weiss auf Hellgrau) nach (Weiss auf Blau) zu ändern.
+        PopupMenu popupMenu = new PopupMenu(ctw, view);
         popupMenu.getMenuInflater().inflate(R.menu.popup_external, popupMenu.getMenu());  // Inflating popup menu from popup_menu.xml file
-
+        popupMenu.setForceShowIcon(true);
         // Handling menu item click events
         popupMenu.setOnMenuItemClickListener(menuItem -> {
             String title = String.valueOf(menuItem.getTitle());
@@ -131,7 +142,7 @@ public class FBDetail {
             if(title.equals("Editor Markor")) startEditor(filename);
             else if(title.equals("Map GPXSee")) startGpxSee(filename);
             else if(title.equals("Map OSMand")) startOsmand(filename);
-            else if(title.equals("Map OSMTracker")) startOsmtracker(filename);
+            // else if(title.equals("Map OSMTracker")) startOsmtracker(filename);
             return true;
         });
         popupMenu.show(); // Showing the popup menu
