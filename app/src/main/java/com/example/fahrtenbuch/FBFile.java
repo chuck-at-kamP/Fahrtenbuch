@@ -8,13 +8,14 @@ import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
-import java.io.FileReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.Objects;
 
 public class FBFile {
 
@@ -66,8 +67,8 @@ public class FBFile {
         String f5 = context.getCodeCacheDir().getAbsolutePath();
         String f6 = context.getDataDir().getAbsolutePath();
         String f7 = context.getDir("testf7",Context.MODE_APPEND).getAbsolutePath();
-        String f8 = context.getExternalCacheDir().getAbsolutePath();
-        String f9 = context.getExternalFilesDir(Environment.DIRECTORY_DOCUMENTS).getAbsolutePath();
+        String f8 = Objects.requireNonNull(context.getExternalCacheDir()).getAbsolutePath();
+        String f9 = Objects.requireNonNull(context.getExternalFilesDir(Environment.DIRECTORY_DOCUMENTS)).getAbsolutePath();
         String f10 = context.getFileStreamPath("fahrtenbuch.csv").getAbsolutePath();
         String f11 = context.getNoBackupFilesDir().getAbsolutePath();
         String f12 = context.getObbDir().getAbsolutePath();
@@ -86,13 +87,9 @@ public class FBFile {
         return list;
     }
     public List<String> getFiles() {
-        List<String> list = new ArrayList<String>();
         File f1 = context.getFilesDir();
         String[] files = f1.list();
-        for(String file:files) {
-            list.add(file);
-        }
-        return list;
+        return new ArrayList<String>(Arrays.asList(files));
     }
     public String saveList(List<Map<String,String>> data) {
         FileOutputStream fileOutputStream;
@@ -114,8 +111,7 @@ public class FBFile {
             fileOutputStream.close();
         } catch (Exception e) {
             e.printStackTrace();
-            String message = e.getMessage();
-            return message;
+            return e.getMessage();
         }
         return "OK";
     }

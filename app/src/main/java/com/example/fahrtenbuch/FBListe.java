@@ -1,29 +1,14 @@
 package com.example.fahrtenbuch;
 
-import static android.view.View.VISIBLE;
-import static androidx.core.content.ContextCompat.startActivity;
-
 import android.app.Activity;
 import android.content.Intent;
-import android.content.res.TypedArray;
-import android.graphics.Color;
-import android.graphics.drawable.Drawable;
-import android.graphics.drawable.ShapeDrawable;
-import android.util.AttributeSet;
 import android.util.Log;
 import android.view.ContextThemeWrapper;
-import android.view.LayoutInflater;
 import android.view.View;
-import android.view.ViewGroup;
-import android.widget.LinearLayout;
-import android.widget.LinearLayout.*;
 import android.widget.TableLayout;
 import android.widget.TableRow;
 import android.widget.TextView;
 import android.widget.Toast;
-
-import androidx.appcompat.widget.LinearLayoutCompat;
-import androidx.core.content.res.ResourcesCompat;
 
 import java.io.Serializable;
 import java.util.ArrayList;

@@ -2,7 +2,6 @@ package com.example.fahrtenbuch;
 
 import android.app.Activity;
 import android.os.Environment;
-import android.provider.MediaStore;
 import android.util.Log;
 import android.widget.Toast;
 

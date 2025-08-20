@@ -11,14 +11,12 @@ public class Util {
 
     public static boolean verifyTime(String str) {
         //str = str.trim();
-        if(str == null || str.equals("")) return false;
-        if(!str.matches("^[0-9.: ]+$")) return false;
-        return true;
+        if(str == null || str.isEmpty()) return false;
+        return str.matches("^[0-9.: ]+$");
     }
     public static boolean verifyString(String str) {
         //str = str.trim();
-        if(str == null || str.equals("")) return false;
-        return true;
+        return str != null && !str.isEmpty();
     }
     public static boolean isNumeric(String strNum) {
         if (strNum == null) {
