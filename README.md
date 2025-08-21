@@ -18,7 +18,7 @@ Here are some screenshots of the app:
 <table>
 <tr><td> Start screen with 'Start' and 'Stop' Button for your trip. Press 'Start' for recording.
 </td><td> Press 'Stop' to stop Recording.
-</td><td> Details of a trip.
+</td><td> Menu to change to another screen.
 </td></tr>
 
 <tr><td><img src="app/src/main/resources/FB-Start.png" width="100%" alt="Start screen">
@@ -57,4 +57,5 @@ You can open the GPX file also in Markor-Editor App.
 ## Map App
 
 On the Map you can see your recorded GPS data in OSMand or GPXSee.
-------
+
+
