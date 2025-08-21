@@ -16,20 +16,24 @@ meter automatically.
 Here are some screenshots of the app:
 
 <table>
-
-<tr><td>
-Start screen with 'Start' and 'Stop' Button four your trip.
-</td><td>
-List of all trips and chargings.
-</td><td>
-Details of a trip.
-</td><td>
-Map of your trip.
+<tr><td> Start screen with 'Start' and 'Stop' Button for your trip. Press 'Start' for recording.
+</td><td> Press 'Stop' to stop Recording.
+</td><td> Details of a trip.
 </td></tr>
-<tr><td><img src="" width="20%" alt="Start screen">
-</td><td><img src="" width="20%" alt="List screen">
-</td><td><img src="" width="20%" alt="Detail screen">
-</td><td><img src="" width="20%" alt="Map App">
+
+<tr><td><img src="app/src/main/resources/FB-Start.png" width="20%" alt="Start screen">
+</td><td><img src="app/src/main/resources/FB-Stop.png" width="20%" alt="Stop screen">
+</td><td><img src="app/src/main/resources/FB-Menu.png" width="20%" alt="Menu">
+</td></tr>
+
+<tr><td> List of all trips and chargings.
+</td><td> Details of a trip or charging.
+</td><td> Map of your trip, GPS Data moved to OSMAnd.
+</td></tr>
+
+<tr><td><img src="app/src/main/resources/FB-List.png" width="20%" alt="List Screen">
+</td><td><img src="app/src/main/resources/FB-Detail.png" width="20%" alt="Detail Screen">
+</td><td><img src="app/src/main/resources/FB-Map.png" width="20%" alt="Map App">
 </td></tr>
 </table>
 
